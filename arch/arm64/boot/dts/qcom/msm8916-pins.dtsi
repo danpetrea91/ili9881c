@@ -284,7 +284,8 @@
 
 	i2c2_sleep: i2c2_sleep {
 		pinmux {
-			function = "gpio";
+//			function = "gpio";
+			function = "blsp_i2c2";
 			pins = "gpio6", "gpio7";
 		};
 		pinconf {
@@ -332,7 +333,8 @@
 
 	i2c6_sleep: i2c6_sleep {
 		pinmux {
-			function = "gpio";
+//			function = "gpio";
+			function = "blsp_i2c6";
 			pins = "gpio22", "gpio23";
 		};
 		pinconf {
@@ -834,4 +836,54 @@
                         bias-disable;
                 };
         };
+
+		mpu9250_int_pin {
+			mpu9250_default: mpu9250_default {
+				pinmux {
+					function = "gpio";
+					pins = "gpio69";
+				};
+				pinconf {
+					pins = "gpio69";
+					drive-strength = <6>;
+					bias-pull-up;
+				};
+			};
+			mpu9250_sleep: mpu9250_sleep {
+				pinmux {
+					function = "gpio";
+					pins = "gpio69";
+				};
+				pinconf {
+					pins = "gpio69";
+					drive-strength = <2>;
+					bias-pull-up;
+				};
+			};
+		};
+
+		ak8963_int_pin {
+			ak8963_default: ak8963_default {
+				pinmux {
+					function = "gpio";
+					pins = "gpio69";
+				};
+				pinconf {
+					pins = "gpio69";
+					drive-strength = <6>;
+					bias-pull-up;
+				};
+			};
+			ak8963_sleep: ak8963_sleep {
+				pinmux {
+					function = "gpio";
+					pins = "gpio69";
+				};
+				pinconf {
+					pins = "gpio69";
+					drive-strength = <2>;
+					bias-pull-up;
+				};
+			};
+		};
 };

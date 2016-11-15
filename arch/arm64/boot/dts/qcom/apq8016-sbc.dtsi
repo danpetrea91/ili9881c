@@ -19,6 +19,8 @@
 #include "apq8016-sbc-soc-pins.dtsi"
 #include "apq8016-sbc-pmic-pins.dtsi"
 #include "msm8916-mdss.dtsi"
+
+
 / {
 	aliases {
 		serial0 = &blsp1_uart2;
@@ -187,14 +189,22 @@
 		};
 
 		i2c@78b8000 {
-		/* On High speed expansion */
-			label = "HS-I2C2";
-			status = "okay";
+
+			tca9539: tca9539@20 {
+				compatible = "ti,tca9539";
+				reg = <0x20>;
+				gpio-controller;
+				#gpio-cells = <2>;
+				interrupt-controller;
+				#interrupt-cells = <2>;
+				/* On High speed expansion */
+				label = "HS-I2C2";
+				status = "okay";
+			};
 		};
 
 		i2c@78ba000 {
-		/* On Low speed expansion */
-			label = "LS-I2C1";
+			/* On Low speed expansion */
 			status = "okay";
 		};
 
@@ -218,12 +228,14 @@
 
 			compatible = "gpio-leds";
 
+/*
 			led@1 {
 				label = "apq8016-sbc:green:user1";
 				gpios = <&msmgpio 21 GPIO_ACTIVE_HIGH>;
 				linux,default-trigger = "heartbeat";
 				default-state = "off";
 			};
+*/
 
 			led@2 {
 				label = "apq8016-sbc:green:user2";
@@ -259,7 +271,97 @@
 				linux,default-trigger = "bt";
 				default-state = "off";
 			};
-		};
+			/* TOUCH_GPIO */
+			led@7 {
+				label = "touch_gpio";
+				gpios = <&tca9539 2 GPIO_ACTIVE_HIGH>;
+				linux,default-trigger = "none";
+				default-state = "on";
+			};
+			/* SCAM_PWDN */
+			led@8 {
+				label = "scam_pwdn";
+				gpios = <&tca9539 3 GPIO_ACTIVE_HIGH>;
+				linux,default-trigger = "none";
+				default-state = "on";
+			};
+			/* MCAM_PWDN */
+			led@9 {
+				label = "mcam_pwdn";
+				gpios = <&tca9539 4 GPIO_ACTIVE_HIGH>;
+				linux,default-trigger = "none";
+				default-state = "on";
+			};
+			/* CAM_GPIO_1 */
+			led@10 {
+				label = "cam_gpio_1";
+				gpios = <&tca9539 5 GPIO_ACTIVE_HIGH>;
+				linux,default-trigger = "none";
+				default-state = "on";
+			};
+			/* CAM_GPIO_2 */
+			led@11 {
+				label = "cam_gpio_2";
+				gpios = <&tca9539 6 GPIO_ACTIVE_HIGH>;
+				linux,default-trigger = "none";
+				default-state = "on";
+			};
+			/* LS_EXP_GPIO_10 */
+			led@12 {
+				label = "ls_exp_gpio_10";
+				gpios = <&tca9539 8 GPIO_ACTIVE_HIGH>;
+				linux,default-trigger = "none";
+				default-state = "on";
+			};
+			/* LS_EXP_GPIO_11*/
+			led@13 {
+				label = "ls_exp_gpio_11";
+				gpios = <&tca9539 9 GPIO_ACTIVE_HIGH>;
+				linux,default-trigger = "none";
+				default-state = "off";
+			};
+			/* LS_EXP_GPIO_12 */
+			led@14 {
+				label = "ls_exp_gpio_12";
+				gpios = <&tca9539 10 GPIO_ACTIVE_HIGH>;
+				linux,default-trigger = "none";
+				default-state = "off";
+			};
+			/* LS_EXP_GPIO_13 */
+			led@15 {
+				label = "ls_exp_gpio_13";
+				gpios = <&tca9539 11 GPIO_ACTIVE_HIGH>;
+				linux,default-trigger = "none";
+				default-state = "off";
+			};
+			/* LS_EXP_GPIO_14 */
+			led@16 {
+				label = "ls_exp_gpio_14";
+				gpios = <&tca9539 12 GPIO_ACTIVE_HIGH>;
+				linux,default-trigger = "none";
+				default-state = "off";
+			};
+			/* LS_EXP_GPIO_15 */
+			led@17 {
+				label = "ls_exp_gpio_15";
+				gpios = <&tca9539 13 GPIO_ACTIVE_HIGH>;
+				linux,default-trigger = "none";
+				default-state = "on";
+			};
+			/* LS_EXP_GPIO_16 */
+			led@18 {
+				label = "ls_exp_gpio_16";
+				gpios = <&tca9539 14 GPIO_ACTIVE_HIGH>;
+				linux,default-trigger = "none";
+				default-state = "on";
+			};
+			/* LS_EXP_GPIO_17 */
+			led@19 {
+				label = "ls_exp_gpio_17";
+				gpios = <&tca9539 15 GPIO_ACTIVE_HIGH>;
+				linux,default-trigger = "none";
+				default-state = "on";
+			};
 	};
 
 	usb2513 {
@@ -281,7 +383,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		autorepeat;
-
+		/*i2c-bus = <&blsp_i2c0>;*/
 		pinctrl-names = "default";
 		pinctrl-0 = <&msm_key_volp_n_default>;
 
@@ -293,12 +395,17 @@
 	};
 };
 
+};
 &spmi_pon {
-	// Overwrite RESETIN_N keyboard scan code
+	/* Overwrite RESETIN_N keyboard scan code*/
 	linux,code = <KEY_VOLUMEDOWN>;
 };
 
 &blsp_dma {
+	status = "okay";
+};
+
+&blsp_spi5 {
 	status = "okay";
 };
 
@@ -359,9 +466,8 @@
 	pinctrl-0 = <&usb_sw_sel_pm>;
 };
 
-&blsp_i2c4 {
+&blsp_i2c2 {
 	status = "ok";
-
 	adv_bridge: bridge@39 {
 		status = "ok";
 		compatible = "adi,adv7533";
@@ -376,19 +482,25 @@
 		pinctrl-0 = <&adv7533_int_active &adv7533_switch_active>;
 		pinctrl-1 = <&adv7533_int_suspend &adv7533_switch_suspend>;
 		#sound-dai-cells = <1>;
-
 		port {
 			adv_in: endpoint {
 				remote-endpoint = <&dsi_out>;
 			};
 		};
-
 	};
 };
 
-&mdss_dsi0 {
+
+
+&blsp_i2c4 {
 	status = "ok";
 
+};
+
+
+
+&mdss_dsi0 {
+	status = "ok";
 	port {
 		dsi_out: endpoint {
 			remote-endpoint = <&adv_in>;

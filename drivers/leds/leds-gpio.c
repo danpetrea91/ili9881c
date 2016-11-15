@@ -21,6 +21,10 @@
 #include <linux/property.h>
 #include <linux/slab.h>
 #include <linux/workqueue.h>
+#include <linux/delay.h>
+#include "../gpio/gpiolib.h"
+
+#define N_RESET_GPIO 8
 
 struct gpio_led_data {
 	struct led_classdev cdev;
@@ -142,6 +146,14 @@ static int create_gpio_led(const struct gpio_led *template,
 	ret = gpiod_direction_output(led_dat->gpiod, state);
 	if (ret < 0)
 		return ret;
+
+	if (gpio_chip_hwgpio(led_dat->gpiod) == N_RESET_GPIO) {
+		gpiod_set_value_cansleep(led_dat->gpiod, 1);
+		msleep(1);
+		gpiod_set_value_cansleep(led_dat->gpiod, 0);
+		msleep(1);
+		gpiod_set_value_cansleep(led_dat->gpiod, 1);
+	}
 
 	INIT_WORK(&led_dat->work, gpio_led_work);
 
