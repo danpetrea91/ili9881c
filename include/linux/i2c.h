@@ -175,6 +175,8 @@ struct i2c_driver {
 
 	/* driver model interfaces that don't relate to enumeration  */
 	void (*shutdown)(struct i2c_client *);
+	int (*suspend)(struct i2c_client *, pm_message_t mesg);
+	int (*resume)(struct i2c_client *);
 
 	/* Alert callback, for example for the SMBus alert protocol.
 	 * The format and meaning of the data value depends on the protocol.

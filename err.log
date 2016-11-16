@@ -1,0 +1,1527 @@
+ERROR: do not set execute permissions for source files
+#10: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi
+
+ERROR: trailing whitespace
+#18: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:189:
++^I^I^I$
+
+WARNING: DT compatible string "himax,hx8527-d48" appears un-documented -- check ./Documentation/devicetree/bindings/
+#20: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:191:
++                	           compatible = "himax,hx8527-d48";
+
+ERROR: code indent should use tabs where possible
+#20: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:191:
++                ^I           compatible = "himax,hx8527-d48";$
+
+WARNING: please, no space before tabs
+#20: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:191:
++                ^I           compatible = "himax,hx8527-d48";$
+
+WARNING: please, no spaces at the start of a line
+#20: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:191:
++                ^I           compatible = "himax,hx8527-d48";$
+
+ERROR: code indent should use tabs where possible
+#21: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:192:
++                ^I           reg = <0x4a>;$
+
+WARNING: please, no space before tabs
+#21: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:192:
++                ^I           reg = <0x4a>;$
+
+WARNING: please, no spaces at the start of a line
+#21: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:192:
++                ^I           reg = <0x4a>;$
+
+ERROR: code indent should use tabs where possible
+#22: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:193:
++                ^I           interrupt-parent = <&msmgpio>;$
+
+WARNING: please, no space before tabs
+#22: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:193:
++                ^I           interrupt-parent = <&msmgpio>;$
+
+WARNING: please, no spaces at the start of a line
+#22: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:193:
++                ^I           interrupt-parent = <&msmgpio>;$
+
+ERROR: code indent should use tabs where possible
+#23: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:194:
++                ^I           interrupts = <62 0x2>;$
+
+WARNING: please, no space before tabs
+#23: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:194:
++                ^I           interrupts = <62 0x2>;$
+
+WARNING: please, no spaces at the start of a line
+#23: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:194:
++                ^I           interrupts = <62 0x2>;$
+
+ERROR: code indent should use tabs where possible
+#24: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:195:
++                ^I           vdd-supply = <&vph_pwr_vreg>;$
+
+WARNING: please, no space before tabs
+#24: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:195:
++                ^I           vdd-supply = <&vph_pwr_vreg>;$
+
+WARNING: please, no spaces at the start of a line
+#24: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:195:
++                ^I           vdd-supply = <&vph_pwr_vreg>;$
+
+ERROR: trailing whitespace
+#25: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:196:
++                ^I           vcc_i2c-supply = <&vph_pwr_vreg>; $
+
+ERROR: code indent should use tabs where possible
+#25: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:196:
++                ^I           vcc_i2c-supply = <&vph_pwr_vreg>; $
+
+WARNING: please, no space before tabs
+#25: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:196:
++                ^I           vcc_i2c-supply = <&vph_pwr_vreg>; $
+
+WARNING: please, no spaces at the start of a line
+#25: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:196:
++                ^I           vcc_i2c-supply = <&vph_pwr_vreg>; $
+
+ERROR: code indent should use tabs where possible
+#26: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:197:
++                ^I           himax,name = "hx8527-d48";$
+
+WARNING: please, no space before tabs
+#26: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:197:
++                ^I           himax,name = "hx8527-d48";$
+
+WARNING: please, no spaces at the start of a line
+#26: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:197:
++                ^I           himax,name = "hx8527-d48";$
+
+ERROR: code indent should use tabs where possible
+#27: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:198:
++                ^I           himax,reset-gpio = <&tca9539 1 0>;$
+
+WARNING: please, no space before tabs
+#27: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:198:
++                ^I           himax,reset-gpio = <&tca9539 1 0>;$
+
+WARNING: please, no spaces at the start of a line
+#27: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:198:
++                ^I           himax,reset-gpio = <&tca9539 1 0>;$
+
+ERROR: code indent should use tabs where possible
+#28: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:199:
++                ^I           himax,irq-gpio = <&msmgpio 62 0x00>;$
+
+WARNING: please, no space before tabs
+#28: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:199:
++                ^I           himax,irq-gpio = <&msmgpio 62 0x00>;$
+
+WARNING: please, no spaces at the start of a line
+#28: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:199:
++                ^I           himax,irq-gpio = <&msmgpio 62 0x00>;$
+
+ERROR: code indent should use tabs where possible
+#29: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:200:
++                ^I           himax,i2c-pull-up;$
+
+WARNING: please, no space before tabs
+#29: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:200:
++                ^I           himax,i2c-pull-up;$
+
+WARNING: please, no spaces at the start of a line
+#29: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:200:
++                ^I           himax,i2c-pull-up;$
+
+ERROR: code indent should use tabs where possible
+#30: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:201:
++                ^I           himax,reg-en;$
+
+WARNING: please, no space before tabs
+#30: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:201:
++                ^I           himax,reg-en;$
+
+WARNING: please, no spaces at the start of a line
+#30: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:201:
++                ^I           himax,reg-en;$
+
+ERROR: code indent should use tabs where possible
+#31: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:202:
++                ^I           himax,num-max-touches = <5>;$
+
+WARNING: please, no space before tabs
+#31: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:202:
++                ^I           himax,num-max-touches = <5>;$
+
+WARNING: please, no spaces at the start of a line
+#31: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:202:
++                ^I           himax,num-max-touches = <5>;$
+
+ERROR: trailing whitespace
+#32: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:203:
++                ^I        };   $
+
+ERROR: code indent should use tabs where possible
+#32: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:203:
++                ^I        };   $
+
+WARNING: please, no space before tabs
+#32: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:203:
++                ^I        };   $
+
+WARNING: please, no spaces at the start of a line
+#32: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:203:
++                ^I        };   $
+
+ERROR: code indent should use tabs where possible
+#44: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:209:
++                compatible = "ti,tca9539";$
+
+WARNING: please, no spaces at the start of a line
+#44: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:209:
++                compatible = "ti,tca9539";$
+
+ERROR: code indent should use tabs where possible
+#45: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:210:
++              ^Ireg = <0x20>;$
+
+WARNING: please, no space before tabs
+#45: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:210:
++              ^Ireg = <0x20>;$
+
+WARNING: please, no spaces at the start of a line
+#45: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:210:
++              ^Ireg = <0x20>;$
+
+ERROR: code indent should use tabs where possible
+#46: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:211:
++               ^Igpio-controller;$
+
+WARNING: please, no space before tabs
+#46: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:211:
++               ^Igpio-controller;$
+
+WARNING: please, no spaces at the start of a line
+#46: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:211:
++               ^Igpio-controller;$
+
+ERROR: code indent should use tabs where possible
+#47: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:212:
++               ^I#gpio-cells = <2>;$
+
+WARNING: please, no space before tabs
+#47: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:212:
++               ^I#gpio-cells = <2>;$
+
+WARNING: please, no spaces at the start of a line
+#47: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:212:
++               ^I#gpio-cells = <2>;$
+
+ERROR: code indent should use tabs where possible
+#48: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:213:
++               ^Iinterrupt-controller;$
+
+WARNING: please, no space before tabs
+#48: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:213:
++               ^Iinterrupt-controller;$
+
+WARNING: please, no spaces at the start of a line
+#48: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:213:
++               ^Iinterrupt-controller;$
+
+ERROR: code indent should use tabs where possible
+#49: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:214:
++               ^I#interrupt-cells = <2>;$
+
+WARNING: please, no space before tabs
+#49: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:214:
++               ^I#interrupt-cells = <2>;$
+
+WARNING: please, no spaces at the start of a line
+#49: FILE: arch/arm64/boot/dts/qcom/apq8016-sbc.dtsi:214:
++               ^I#interrupt-cells = <2>;$
+
+ERROR: do not set execute permissions for source files
+#79: FILE: arch/arm64/configs/defconfig
+
+ERROR: trailing whitespace
+#113: FILE: drivers/input/touchscreen/Kconfig:68:
++         code. $
+
+ERROR: trailing whitespace
+#135: FILE: drivers/input/touchscreen/Kconfig:212:
++       $
+
+ERROR: trailing whitespace
+#137: FILE: drivers/input/touchscreen/Kconfig:214:
++       $
+
+WARNING: added, moved or deleted file(s), does MAINTAINERS need updating?
+#154: 
+new file mode 100644
+
+WARNING: 'inital' may be misspelled - perhaps 'initial'?
+#217: FILE: drivers/input/touchscreen/himax8526.c:59:
++/******************** Himax: define and inital setting********************/
+
+WARNING: Block comments use * on subsequent lines
+#231: FILE: drivers/input/touchscreen/himax8526.c:73:
++/*
++#define HX_VKEY_0   101
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#469: FILE: drivers/input/touchscreen/himax8526.c:311:
++		printk(KERN_INFO "[TP] %s: i2c_read_block retry over %d\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#503: FILE: drivers/input/touchscreen/himax8526.c:345:
++		printk(KERN_ERR "[TP] %s: i2c_write_block retry over %d\n",
+
+WARNING: Prefer kcalloc over kzalloc with multiply
+#523: FILE: drivers/input/touchscreen/himax8526.c:365:
++	uint8_t *buf = kzalloc(sizeof(uint8_t)*length, GFP_KERNEL);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#544: FILE: drivers/input/touchscreen/himax8526.c:386:
++		printk(KERN_ERR "[TP] %s: i2c_write_block retry over %d\n",
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#572: FILE: drivers/input/touchscreen/himax8526.c:414:
++		printk(KERN_INFO "[TP] %s: i2c_read_block retry over %d\n",
+
+WARNING: Missing a blank line after declarations
+#585: FILE: drivers/input/touchscreen/himax8526.c:427:
++	unsigned char cmd[2];
++	cmd[0] = enter;
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#587: FILE: drivers/input/touchscreen/himax8526.c:429:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Missing a blank line after declarations
+#596: FILE: drivers/input/touchscreen/himax8526.c:438:
++	unsigned char cmd[2];
++	cmd[0] = enter;
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#598: FILE: drivers/input/touchscreen/himax8526.c:440:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#623: FILE: drivers/input/touchscreen/himax8526.c:465:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#629: FILE: drivers/input/touchscreen/himax8526.c:471:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#635: FILE: drivers/input/touchscreen/himax8526.c:477:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#640: FILE: drivers/input/touchscreen/himax8526.c:482:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#655: FILE: drivers/input/touchscreen/himax8526.c:497:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#661: FILE: drivers/input/touchscreen/himax8526.c:503:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#667: FILE: drivers/input/touchscreen/himax8526.c:509:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#672: FILE: drivers/input/touchscreen/himax8526.c:514:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#690: FILE: drivers/input/touchscreen/himax8526.c:532:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#696: FILE: drivers/input/touchscreen/himax8526.c:538:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#701: FILE: drivers/input/touchscreen/himax8526.c:543:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#706: FILE: drivers/input/touchscreen/himax8526.c:548:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#720: FILE: drivers/input/touchscreen/himax8526.c:562:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#726: FILE: drivers/input/touchscreen/himax8526.c:568:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#732: FILE: drivers/input/touchscreen/himax8526.c:574:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#737: FILE: drivers/input/touchscreen/himax8526.c:579:
++		printk(KERN_ERR "[TP] %s: i2c access fail!\n", __func__);
+
+WARNING: Block comments use * on subsequent lines
+#751: FILE: drivers/input/touchscreen/himax8526.c:593:
++/*
++u8 himax_read_LC_FW_ver(void);
+
+ERROR: Bad function definition - u8 himax_read_LC_FW_ver() should probably be u8 himax_read_LC_FW_ver(void)
+#754: FILE: drivers/input/touchscreen/himax8526.c:596:
++u8 himax_read_LC_FW_ver()
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#819: FILE: drivers/input/touchscreen/himax8526.c:661:
++			printk(KERN_ERR "[TP] %s: i2c access fail!\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#826: FILE: drivers/input/touchscreen/himax8526.c:668:
++			printk(KERN_ERR "[TP] %s: i2c access fail!\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#833: FILE: drivers/input/touchscreen/himax8526.c:675:
++			printk(KERN_ERR "[TP] %s: i2c access fail!\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#841: FILE: drivers/input/touchscreen/himax8526.c:683:
++				printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#845: FILE: drivers/input/touchscreen/himax8526.c:687:
++			printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#848: FILE: drivers/input/touchscreen/himax8526.c:690:
++			printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#858: FILE: drivers/input/touchscreen/himax8526.c:700:
++			printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#868: FILE: drivers/input/touchscreen/himax8526.c:710:
++				printk(KERN_ERR
+
+WARNING: else is not generally useful after a break or return
+#871: FILE: drivers/input/touchscreen/himax8526.c:713:
++				return 1;
++			} else {
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#898: FILE: drivers/input/touchscreen/himax8526.c:740:
++			printk(KERN_ERR "[TP] %s: i2c access fail!\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#910: FILE: drivers/input/touchscreen/himax8526.c:752:
++			printk(KERN_ERR "[TP] %s: i2c access fail!\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#917: FILE: drivers/input/touchscreen/himax8526.c:759:
++			printk(KERN_ERR "[TP] %s: i2c access fail!\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#937: FILE: drivers/input/touchscreen/himax8526.c:779:
++				printk(KERN_ERR "[TP] %s: i2c access fail!\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#948: FILE: drivers/input/touchscreen/himax8526.c:790:
++					printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#956: FILE: drivers/input/touchscreen/himax8526.c:798:
++					printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#964: FILE: drivers/input/touchscreen/himax8526.c:806:
++					printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#973: FILE: drivers/input/touchscreen/himax8526.c:815:
++				printk(KERN_ERR "[TP] %s: i2c access fail!\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#981: FILE: drivers/input/touchscreen/himax8526.c:823:
++				printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#989: FILE: drivers/input/touchscreen/himax8526.c:831:
++				printk(KERN_ERR "[TP] %s: i2c access fail!\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#998: FILE: drivers/input/touchscreen/himax8526.c:840:
++					printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1006: FILE: drivers/input/touchscreen/himax8526.c:848:
++					printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1014: FILE: drivers/input/touchscreen/himax8526.c:856:
++					printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1022: FILE: drivers/input/touchscreen/himax8526.c:864:
++					printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1033: FILE: drivers/input/touchscreen/himax8526.c:875:
++					printk(KERN_ERR
+
+WARNING: else is not generally useful after a break or return
+#1043: FILE: drivers/input/touchscreen/himax8526.c:885:
++						return 0;
++					} else {
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1071: FILE: drivers/input/touchscreen/himax8526.c:913:
++			printk(KERN_ERR "[TP] %s: i2c access fail!\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1083: FILE: drivers/input/touchscreen/himax8526.c:925:
++			printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1090: FILE: drivers/input/touchscreen/himax8526.c:932:
++			printk(KERN_ERR "[TP] %s: i2c access fail!\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1109: FILE: drivers/input/touchscreen/himax8526.c:951:
++				printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1119: FILE: drivers/input/touchscreen/himax8526.c:961:
++					printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1127: FILE: drivers/input/touchscreen/himax8526.c:969:
++					printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1135: FILE: drivers/input/touchscreen/himax8526.c:977:
++					printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1144: FILE: drivers/input/touchscreen/himax8526.c:986:
++				printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1152: FILE: drivers/input/touchscreen/himax8526.c:994:
++				printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1160: FILE: drivers/input/touchscreen/himax8526.c:1002:
++				printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1169: FILE: drivers/input/touchscreen/himax8526.c:1011:
++					printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1177: FILE: drivers/input/touchscreen/himax8526.c:1019:
++					printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1185: FILE: drivers/input/touchscreen/himax8526.c:1027:
++					printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1193: FILE: drivers/input/touchscreen/himax8526.c:1035:
++					printk(KERN_ERR
+
+WARNING: else is not generally useful after a break or return
+#1213: FILE: drivers/input/touchscreen/himax8526.c:1055:
++						return 0;
++					} else {
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#1280: FILE: drivers/input/touchscreen/himax8526.c:1122:
++	printk(KERN_INFO "[TP] %s: himax_command = %x\n", __func__,
+
+WARNING: Prefer [subsystem eg: netdev]_warn([subsystem]dev, ... then dev_warn(dev, ... then pr_warn(...  to printk(KERN_WARNING ...
+#1285: FILE: drivers/input/touchscreen/himax8526.c:1127:
++		printk(KERN_WARNING "[TP] %s: read fail\n", __func__);
+
+WARNING: Missing a blank line after declarations
+#1314: FILE: drivers/input/touchscreen/himax8526.c:1156:
++			uint16_t base = 5;
++			memcpy(buf_tmp, buf + 3, 2);
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#1322: FILE: drivers/input/touchscreen/himax8526.c:1164:
++					printk(KERN_INFO "CMD: %x, %x, %d\n",
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#1326: FILE: drivers/input/touchscreen/himax8526.c:1168:
++						printk(KERN_INFO "%x ",
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#1329: FILE: drivers/input/touchscreen/himax8526.c:1171:
++					printk(KERN_INFO "\n");
+
+WARNING: Block comments use * on subsequent lines
+#1393: FILE: drivers/input/touchscreen/himax8526.c:1235:
++/*If you want to update FW, you should discommented this block
++	if (buf[0] == 't') {
+
+WARNING: Missing a blank line after declarations
+#1563: FILE: drivers/input/touchscreen/himax8526.c:1405:
++	struct himax_ts_data *data = dev_get_drvdata(dev);
++	return snprintf(buf, HIMAX_INFO_MAX_LEN, "%s\n", data->ts_info);
+
+WARNING: Missing a blank line after declarations
+#1795: FILE: drivers/input/touchscreen/himax8526.c:1637:
++	int ret;
++	android_touch_kobj = kobject_create_and_add("android_touch", NULL);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1797: FILE: drivers/input/touchscreen/himax8526.c:1639:
++		printk(KERN_ERR "[TP]TOUCH_ERR: subsystem_register failed\n");
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1803: FILE: drivers/input/touchscreen/himax8526.c:1645:
++		printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1810: FILE: drivers/input/touchscreen/himax8526.c:1652:
++		printk(KERN_ERR "[TP]TOUCH_ERR: create_file register failed\n");
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1816: FILE: drivers/input/touchscreen/himax8526.c:1658:
++		printk(KERN_ERR "[TP]TOUCH_ERR: sysfs_create_file failed\n");
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1821: FILE: drivers/input/touchscreen/himax8526.c:1663:
++		printk(KERN_ERR "[TP]TOUCH_ERR: sysfs_create_file failed\n");
+
+WARNING: space prohibited before semicolon
+#1825: FILE: drivers/input/touchscreen/himax8526.c:1667:
++	return 0 ;
+
+WARNING: Missing a blank line after declarations
+#1874: FILE: drivers/input/touchscreen/himax8526.c:1716:
++	int hx_touch_info_size;
++	if (raw_cnt_rmd != 0x00) {
+
+WARNING: Block comments use * on subsequent lines
+#1877: FILE: drivers/input/touchscreen/himax8526.c:1719:
++/*
++		RawDataLen = 128 - ((HX_TP_MAX_FINGER+raw_cnt_max+3)*4);
+
+WARNING: Block comments use * on subsequent lines
+#1883: FILE: drivers/input/touchscreen/himax8526.c:1725:
++/*
++		RawDataLen = 128 - ((HX_TP_MAX_FINGER+raw_cnt_max+2)*4);
+
+WARNING: Block comments use * on subsequent lines
+#1899: FILE: drivers/input/touchscreen/himax8526.c:1741:
++/*
++	msg[1].len = hx_touch_info_size + RawDataLen + 4;
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#1907: FILE: drivers/input/touchscreen/himax8526.c:1749:
++	printk(KERN_ERR "******Himax Touch Controller Trigger ISR test\n");
+
+ERROR: space prohibited before that ',' (ctx:WxW)
+#1914: FILE: drivers/input/touchscreen/himax8526.c:1756:
++		memset(buf, 0xff , 128);
+ 		                 ^
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#1922: FILE: drivers/input/touchscreen/himax8526.c:1764:
++		printk(KERN_INFO
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#1933: FILE: drivers/input/touchscreen/himax8526.c:1775:
++		printk(KERN_INFO "[TP]%s: raw data:\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#1935: FILE: drivers/input/touchscreen/himax8526.c:1777:
++			printk(KERN_INFO
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#1944: FILE: drivers/input/touchscreen/himax8526.c:1786:
++		printk(KERN_INFO "[TP]%s: Diag Raw Data:\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#1970: FILE: drivers/input/touchscreen/himax8526.c:1812:
++			printk(KERN_INFO "[TP]%s: header format is wrong!\n",
+
+WARNING: space prohibited before semicolon
+#1990: FILE: drivers/input/touchscreen/himax8526.c:1832:
++				y = buf[4 * i + 1] | (buf[4 * i] << 8) ;
+
+WARNING: suspect code indent for conditional statements (16, 40)
+#1997: FILE: drivers/input/touchscreen/himax8526.c:1839:
++		if (hx_point_num != 0 && buf[4*i] != 0xFF && x <= x_res &&
+[...]
++					press = buf[4*HX_TP_MAX_FINGER+i];
+
+ERROR: code indent should use tabs where possible
+#2012: FILE: drivers/input/touchscreen/himax8526.c:1854:
++                                                ABS_X, x);$
+
+WARNING: please, no spaces at the start of a line
+#2012: FILE: drivers/input/touchscreen/himax8526.c:1854:
++                                                ABS_X, x);$
+
+ERROR: code indent should use tabs where possible
+#2013: FILE: drivers/input/touchscreen/himax8526.c:1855:
++                                        input_report_abs(ts->input_dev,$
+
+WARNING: please, no spaces at the start of a line
+#2013: FILE: drivers/input/touchscreen/himax8526.c:1855:
++                                        input_report_abs(ts->input_dev,$
+
+ERROR: code indent should use tabs where possible
+#2014: FILE: drivers/input/touchscreen/himax8526.c:1856:
++                                                ABS_Y, y);$
+
+WARNING: please, no spaces at the start of a line
+#2014: FILE: drivers/input/touchscreen/himax8526.c:1856:
++                                                ABS_Y, y);$
+
+WARNING: line over 80 characters
+#2015: FILE: drivers/input/touchscreen/himax8526.c:1857:
++					//input_report_key(ts->input_dev, BTN_TOUCH, 1);
+
+ERROR: do not use C99 // comments
+#2015: FILE: drivers/input/touchscreen/himax8526.c:1857:
++					//input_report_key(ts->input_dev, BTN_TOUCH, 1);
+
+ERROR: trailing whitespace
+#2016: FILE: drivers/input/touchscreen/himax8526.c:1858:
++^I^I^I^I^Iold_status[i] = 1; $
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#2017: FILE: drivers/input/touchscreen/himax8526.c:1859:
++				printk(KERN_INFO "x = %d, y = %d, id = %d\n",
+
+ERROR: trailing whitespace
+#2033: FILE: drivers/input/touchscreen/himax8526.c:1875:
++^I^I/*if (tpd_key == 4)^I$
+
+ERROR: code indent should use tabs where possible
+#2034: FILE: drivers/input/touchscreen/himax8526.c:1876:
++                        input_report_key(ts->input_dev, BTN_TOUCH, 0);*/$
+
+WARNING: Block comments use * on subsequent lines
+#2034: FILE: drivers/input/touchscreen/himax8526.c:1876:
++		/*if (tpd_key == 4)	
++                        input_report_key(ts->input_dev, BTN_TOUCH, 0);*/
+
+WARNING: Block comments use a trailing */ on a separate line
+#2034: FILE: drivers/input/touchscreen/himax8526.c:1876:
++                        input_report_key(ts->input_dev, BTN_TOUCH, 0);*/
+
+WARNING: line over 80 characters
+#2039: FILE: drivers/input/touchscreen/himax8526.c:1881:
++			input_report_key(ts->input_dev, tpd_keys_local[tpd_key_old - 1], 0);
+
+WARNING: void function return statements are not generally useful
+#2094: FILE: drivers/input/touchscreen/himax8526.c:1936:
++	return;
++}
+
+WARNING: Block comments use * on subsequent lines
+#2116: FILE: drivers/input/touchscreen/himax8526.c:1958:
++/*
++	err = request_irq(client->irq, himax_ts_irq_handler,
+
+WARNING: Missing a blank line after declarations
+#2132: FILE: drivers/input/touchscreen/himax8526.c:1974:
++	int ret;
++	buf0[0] = HX_CMD_TSSON;
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2136: FILE: drivers/input/touchscreen/himax8526.c:1978:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2154: FILE: drivers/input/touchscreen/himax8526.c:1996:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2164: FILE: drivers/input/touchscreen/himax8526.c:2006:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2175: FILE: drivers/input/touchscreen/himax8526.c:2017:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2186: FILE: drivers/input/touchscreen/himax8526.c:2028:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2197: FILE: drivers/input/touchscreen/himax8526.c:2039:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2207: FILE: drivers/input/touchscreen/himax8526.c:2049:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2216: FILE: drivers/input/touchscreen/himax8526.c:2058:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2225: FILE: drivers/input/touchscreen/himax8526.c:2067:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2236: FILE: drivers/input/touchscreen/himax8526.c:2078:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2246: FILE: drivers/input/touchscreen/himax8526.c:2088:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2257: FILE: drivers/input/touchscreen/himax8526.c:2099:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2276: FILE: drivers/input/touchscreen/himax8526.c:2118:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2290: FILE: drivers/input/touchscreen/himax8526.c:2132:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2299: FILE: drivers/input/touchscreen/himax8526.c:2141:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2308: FILE: drivers/input/touchscreen/himax8526.c:2150:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2319: FILE: drivers/input/touchscreen/himax8526.c:2161:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2329: FILE: drivers/input/touchscreen/himax8526.c:2171:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2340: FILE: drivers/input/touchscreen/himax8526.c:2182:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2351: FILE: drivers/input/touchscreen/himax8526.c:2193:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2362: FILE: drivers/input/touchscreen/himax8526.c:2204:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2371: FILE: drivers/input/touchscreen/himax8526.c:2213:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2380: FILE: drivers/input/touchscreen/himax8526.c:2222:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2405: FILE: drivers/input/touchscreen/himax8526.c:2247:
++		printk(KERN_ERR "i2c_master_send failed addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2428: FILE: drivers/input/touchscreen/himax8526.c:2270:
++		printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2433: FILE: drivers/input/touchscreen/himax8526.c:2275:
++		printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2436: FILE: drivers/input/touchscreen/himax8526.c:2278:
++		printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2459: FILE: drivers/input/touchscreen/himax8526.c:2301:
++			printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2463: FILE: drivers/input/touchscreen/himax8526.c:2305:
++			printk(KERN_ERR "*****HIMAX TEST: OK addr = 0x%x\n",
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2480: FILE: drivers/input/touchscreen/himax8526.c:2322:
++	printk(KERN_ERR "__ding__ start update\n");
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2482: FILE: drivers/input/touchscreen/himax8526.c:2324:
++		printk(KERN_ERR "TP upgrade error, line: %d\n", __LINE__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2484: FILE: drivers/input/touchscreen/himax8526.c:2326:
++		printk(KERN_ERR "TP upgrade OK, line: %d\n", __LINE__);
+
+WARNING: suspect code indent for conditional statements (8, 24)
+#2524: FILE: drivers/input/touchscreen/himax8526.c:2366:
++	if (ts->regulator_en) {
++			vdd = regulator_get(&i2c_client->dev, "vdd");
+
+WARNING: Block comments use * on subsequent lines
+#2650: FILE: drivers/input/touchscreen/himax8526.c:2492:
++/*
++	__stringify(EV_KEY)":"__stringify(KEY_MENU)":110:1315:80:80"":"
+
+WARNING: line over 80 characters
+#2700: FILE: drivers/input/touchscreen/himax8526.c:2542:
++		himax_virtual_key_properties_kobj = kobject_create_and_add("board_properties", NULL);
+
+ERROR: that open brace { should be on the previous line
+#2718: FILE: drivers/input/touchscreen/himax8526.c:2560:
++	if (i2c_himax_read(ts_modify->client, 0xD1, cmd, 3,
++		DEFAULT_RETRY_CNT) < 0)
++		{
+
+ERROR: that open brace { should be on the previous line
+#2724: FILE: drivers/input/touchscreen/himax8526.c:2566:
++	if (i2c_himax_read(ts_modify->client, 0x31, data, 3,
++		DEFAULT_RETRY_CNT) < 0)
++		{
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#2731: FILE: drivers/input/touchscreen/himax8526.c:2573:
++	printk(KERN_INFO "himax device id : 0x%x\n", data[0]);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2767: FILE: drivers/input/touchscreen/himax8526.c:2609:
++	printk(KERN_ERR "__ding__ himax_ts_probe\n");
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2770: FILE: drivers/input/touchscreen/himax8526.c:2612:
++		printk(KERN_ERR	"himax_ts_probe other driver has been loaded\n");
+
+WARNING: line over 80 characters
+#2776: FILE: drivers/input/touchscreen/himax8526.c:2618:
++		printk(KERN_ERR	"[himax] %s: i2c check functionality error\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2776: FILE: drivers/input/touchscreen/himax8526.c:2618:
++		printk(KERN_ERR	"[himax] %s: i2c check functionality error\n", __func__);
+
+WARNING: line over 80 characters
+#2783: FILE: drivers/input/touchscreen/himax8526.c:2625:
++		printk(KERN_ERR	"[himax] %s: allocate himax_ts_data failed\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2783: FILE: drivers/input/touchscreen/himax8526.c:2625:
++		printk(KERN_ERR	"[himax] %s: allocate himax_ts_data failed\n", __func__);
+
+WARNING: Possible unnecessary 'out of memory' message
+#2783: FILE: drivers/input/touchscreen/himax8526.c:2625:
++	if (ts == NULL) {
++		printk(KERN_ERR	"[himax] %s: allocate himax_ts_data failed\n", __func__);
+
+WARNING: line over 80 characters
+#2790: FILE: drivers/input/touchscreen/himax8526.c:2632:
++		printk(KERN_ERR "[himax] %s: create workqueue failed\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2790: FILE: drivers/input/touchscreen/himax8526.c:2632:
++		printk(KERN_ERR "[himax] %s: create workqueue failed\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#2803: FILE: drivers/input/touchscreen/himax8526.c:2645:
++		printk(KERN_INFO "HIMAX ERR POWER ON\n");
+
+WARNING: please, no spaces at the start of a line
+#2808: FILE: drivers/input/touchscreen/himax8526.c:2650:
++    if (err) {$
+
+WARNING: suspect code indent for conditional statements (4, 16)
+#2808: FILE: drivers/input/touchscreen/himax8526.c:2650:
++    if (err) {
++		}
+
+WARNING: braces {} are not necessary for single statement blocks
+#2808: FILE: drivers/input/touchscreen/himax8526.c:2650:
++    if (err) {
++		}
+
+WARNING: please, no spaces at the start of a line
+#2812: FILE: drivers/input/touchscreen/himax8526.c:2654:
++    if (err) {$
+
+WARNING: suspect code indent for conditional statements (4, 16)
+#2812: FILE: drivers/input/touchscreen/himax8526.c:2654:
++    if (err) {
++		}
+
+WARNING: braces {} are not necessary for single statement blocks
+#2812: FILE: drivers/input/touchscreen/himax8526.c:2654:
++    if (err) {
++		}
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#2826: FILE: drivers/input/touchscreen/himax8526.c:2668:
++		printk(KERN_INFO "HIMAX ERR READ DEVICE ID\n");
+
+WARNING: Block comments use * on subsequent lines
+#2841: FILE: drivers/input/touchscreen/himax8526.c:2683:
++/*	This includes the maximum x-y axix and the report information
++	such as area, pressure and x-y point.*/
+
+WARNING: Block comments use a trailing */ on a separate line
+#2841: FILE: drivers/input/touchscreen/himax8526.c:2683:
++	such as area, pressure and x-y point.*/
+
+ERROR: code indent should use tabs where possible
+#2869: FILE: drivers/input/touchscreen/himax8526.c:2711:
++                                DEFAUULT_X_RES, 0, 0);$
+
+WARNING: please, no spaces at the start of a line
+#2869: FILE: drivers/input/touchscreen/himax8526.c:2711:
++                                DEFAUULT_X_RES, 0, 0);$
+
+ERROR: code indent should use tabs where possible
+#2870: FILE: drivers/input/touchscreen/himax8526.c:2712:
++        input_set_abs_params(ts->input_dev, ABS_Y, 0,$
+
+WARNING: please, no spaces at the start of a line
+#2870: FILE: drivers/input/touchscreen/himax8526.c:2712:
++        input_set_abs_params(ts->input_dev, ABS_Y, 0,$
+
+ERROR: trailing whitespace
+#2871: FILE: drivers/input/touchscreen/himax8526.c:2713:
++                                DEFAUULT_Y_RES, 0, 0); $
+
+ERROR: code indent should use tabs where possible
+#2871: FILE: drivers/input/touchscreen/himax8526.c:2713:
++                                DEFAUULT_Y_RES, 0, 0); $
+
+WARNING: please, no spaces at the start of a line
+#2871: FILE: drivers/input/touchscreen/himax8526.c:2713:
++                                DEFAUULT_Y_RES, 0, 0); $
+
+ERROR: space required after that ',' (ctx:VxV)
+#2872: FILE: drivers/input/touchscreen/himax8526.c:2714:
++	input_mt_init_slots(ts->input_dev, HX_TP_MAX_FINGER,0);
+ 	                                                   ^
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#2904: FILE: drivers/input/touchscreen/himax8526.c:2746:
++		printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#3015: FILE: drivers/input/touchscreen/himax8526.c:2857:
++		printk(KERN_INFO
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#3126: FILE: drivers/input/touchscreen/himax8526.c:2968:
++	printk(KERN_INFO "[himax] %s: TS suspend\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#3132: FILE: drivers/input/touchscreen/himax8526.c:2974:
++		printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#3142: FILE: drivers/input/touchscreen/himax8526.c:2984:
++		printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#3153: FILE: drivers/input/touchscreen/himax8526.c:2995:
++		printk(KERN_ERR
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#3177: FILE: drivers/input/touchscreen/himax8526.c:3019:
++	printk(KERN_INFO "[himax] %s: TS resume\n", __func__);
+
+WARNING: Prefer [subsystem eg: netdev]_err([subsystem]dev, ... then dev_err(dev, ... then pr_err(...  to printk(KERN_ERR ...
+#3184: FILE: drivers/input/touchscreen/himax8526.c:3026:
++		printk(KERN_ERR
+
+WARNING: Missing a blank line after declarations
+#3202: FILE: drivers/input/touchscreen/himax8526.c:3044:
++	struct himax_ts_data *ts;
++	ts = container_of(h, struct himax_ts_data, early_suspend);
+
+WARNING: Missing a blank line after declarations
+#3209: FILE: drivers/input/touchscreen/himax8526.c:3051:
++	struct himax_ts_data *ts;
++	ts = container_of(h, struct himax_ts_data, early_suspend);
+
+WARNING: struct of_device_id should normally be const
+#3220: FILE: drivers/input/touchscreen/himax8526.c:3062:
++static struct of_device_id himax_match_table[] = {
+
+WARNING: DT compatible string "himax,hx8527-d48" appears un-documented -- check ./Documentation/devicetree/bindings/
+#3221: FILE: drivers/input/touchscreen/himax8526.c:3063:
++	{ .compatible = "himax,hx8527-d48",},
+
+WARNING: Prefer [subsystem eg: netdev]_info([subsystem]dev, ... then dev_info(dev, ... then pr_info(...  to printk(KERN_INFO ...
+#3245: FILE: drivers/input/touchscreen/himax8526.c:3087:
++	printk(KERN_INFO "[himax] %s\n", __func__);
+
+WARNING: void function return statements are not generally useful
+#3253: FILE: drivers/input/touchscreen/himax8526.c:3095:
++	return;
++}
+
+ERROR: do not set execute permissions for source files
+#3310: FILE: drivers/regulator/core.c
+
+WARNING: please, no spaces at the start of a line
+#3343: FILE: drivers/regulator/core.c:3323:
++ int regulator_set_optimum_mode(struct regulator *regulator, int uA_load)$
+
+WARNING: please, no spaces at the start of a line
+#3344: FILE: drivers/regulator/core.c:3324:
++ {$
+
+WARNING: please, no spaces at the start of a line
+#3345: FILE: drivers/regulator/core.c:3325:
++     struct regulator_dev *rdev = regulator->rdev;$
+
+WARNING: please, no spaces at the start of a line
+#3346: FILE: drivers/regulator/core.c:3326:
++     struct regulator *consumer;$
+
+WARNING: please, no spaces at the start of a line
+#3347: FILE: drivers/regulator/core.c:3327:
++     int ret, output_uV, input_uV = 0, total_uA_load = 0;$
+
+WARNING: please, no spaces at the start of a line
+#3348: FILE: drivers/regulator/core.c:3328:
++     unsigned int mode;$
+
+ERROR: trailing whitespace
+#3349: FILE: drivers/regulator/core.c:3329:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3349: FILE: drivers/regulator/core.c:3329:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3350: FILE: drivers/regulator/core.c:3330:
++     if (rdev->supply)$
+
+WARNING: suspect code indent for conditional statements (5, 9)
+#3350: FILE: drivers/regulator/core.c:3330:
++     if (rdev->supply)
++         input_uV = regulator_get_voltage(rdev->supply);
+
+ERROR: code indent should use tabs where possible
+#3351: FILE: drivers/regulator/core.c:3331:
++         input_uV = regulator_get_voltage(rdev->supply);$
+
+WARNING: please, no spaces at the start of a line
+#3351: FILE: drivers/regulator/core.c:3331:
++         input_uV = regulator_get_voltage(rdev->supply);$
+
+WARNING: please, no spaces at the start of a line
+#3352: FILE: drivers/regulator/core.c:3332:
++ mutex_lock(&rdev->mutex);$
+
+ERROR: trailing whitespace
+#3353: FILE: drivers/regulator/core.c:3333:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3353: FILE: drivers/regulator/core.c:3333:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3358: FILE: drivers/regulator/core.c:3338:
++     regulator->uA_load = uA_load;$
+
+WARNING: please, no spaces at the start of a line
+#3359: FILE: drivers/regulator/core.c:3339:
++     ret = regulator_check_drms(rdev);$
+
+WARNING: please, no spaces at the start of a line
+#3360: FILE: drivers/regulator/core.c:3340:
++     if (ret < 0) {$
+
+WARNING: suspect code indent for conditional statements (5, 9)
+#3360: FILE: drivers/regulator/core.c:3340:
++     if (ret < 0) {
++         ret = 0;
+
+ERROR: code indent should use tabs where possible
+#3361: FILE: drivers/regulator/core.c:3341:
++         ret = 0;$
+
+WARNING: please, no spaces at the start of a line
+#3361: FILE: drivers/regulator/core.c:3341:
++         ret = 0;$
+
+ERROR: code indent should use tabs where possible
+#3362: FILE: drivers/regulator/core.c:3342:
++         goto out;$
+
+WARNING: please, no spaces at the start of a line
+#3362: FILE: drivers/regulator/core.c:3342:
++         goto out;$
+
+WARNING: please, no spaces at the start of a line
+#3363: FILE: drivers/regulator/core.c:3343:
++     }$
+
+ERROR: trailing whitespace
+#3364: FILE: drivers/regulator/core.c:3344:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3364: FILE: drivers/regulator/core.c:3344:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3365: FILE: drivers/regulator/core.c:3345:
++     if (!rdev->desc->ops->get_optimum_mode)$
+
+WARNING: suspect code indent for conditional statements (5, 9)
+#3365: FILE: drivers/regulator/core.c:3345:
++     if (!rdev->desc->ops->get_optimum_mode)
++         goto out;
+
+ERROR: code indent should use tabs where possible
+#3366: FILE: drivers/regulator/core.c:3346:
++         goto out;$
+
+WARNING: please, no spaces at the start of a line
+#3366: FILE: drivers/regulator/core.c:3346:
++         goto out;$
+
+ERROR: trailing whitespace
+#3367: FILE: drivers/regulator/core.c:3347:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3367: FILE: drivers/regulator/core.c:3347:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3372: FILE: drivers/regulator/core.c:3352:
++     ret = -EINVAL;$
+
+ERROR: trailing whitespace
+#3373: FILE: drivers/regulator/core.c:3353:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3373: FILE: drivers/regulator/core.c:3353:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3374: FILE: drivers/regulator/core.c:3354:
++     if (!rdev->desc->ops->set_mode)$
+
+WARNING: suspect code indent for conditional statements (5, 9)
+#3374: FILE: drivers/regulator/core.c:3354:
++     if (!rdev->desc->ops->set_mode)
++         goto out;
+
+ERROR: code indent should use tabs where possible
+#3375: FILE: drivers/regulator/core.c:3355:
++         goto out;$
+
+WARNING: please, no spaces at the start of a line
+#3375: FILE: drivers/regulator/core.c:3355:
++         goto out;$
+
+ERROR: trailing whitespace
+#3376: FILE: drivers/regulator/core.c:3356:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3376: FILE: drivers/regulator/core.c:3356:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3378: FILE: drivers/regulator/core.c:3358:
++     output_uV = _regulator_get_voltage(rdev);$
+
+WARNING: please, no spaces at the start of a line
+#3379: FILE: drivers/regulator/core.c:3359:
++     if (output_uV <= 0) {$
+
+WARNING: suspect code indent for conditional statements (5, 9)
+#3379: FILE: drivers/regulator/core.c:3359:
++     if (output_uV <= 0) {
++         rdev_err(rdev, "invalid output voltage found\n");
+
+ERROR: code indent should use tabs where possible
+#3380: FILE: drivers/regulator/core.c:3360:
++         rdev_err(rdev, "invalid output voltage found\n");$
+
+WARNING: please, no spaces at the start of a line
+#3380: FILE: drivers/regulator/core.c:3360:
++         rdev_err(rdev, "invalid output voltage found\n");$
+
+ERROR: code indent should use tabs where possible
+#3381: FILE: drivers/regulator/core.c:3361:
++        goto out;$
+
+WARNING: please, no spaces at the start of a line
+#3381: FILE: drivers/regulator/core.c:3361:
++        goto out;$
+
+WARNING: please, no spaces at the start of a line
+#3382: FILE: drivers/regulator/core.c:3362:
++     }$
+
+WARNING: please, no spaces at the start of a line
+#3384: FILE: drivers/regulator/core.c:3364:
++     if (input_uV <= 0)$
+
+WARNING: suspect code indent for conditional statements (5, 9)
+#3384: FILE: drivers/regulator/core.c:3364:
++     if (input_uV <= 0)
++         input_uV = rdev->constraints->input_uV;
+
+ERROR: code indent should use tabs where possible
+#3385: FILE: drivers/regulator/core.c:3365:
++         input_uV = rdev->constraints->input_uV;$
+
+WARNING: please, no spaces at the start of a line
+#3385: FILE: drivers/regulator/core.c:3365:
++         input_uV = rdev->constraints->input_uV;$
+
+WARNING: please, no spaces at the start of a line
+#3386: FILE: drivers/regulator/core.c:3366:
++     if (input_uV <= 0) {$
+
+WARNING: suspect code indent for conditional statements (5, 9)
+#3386: FILE: drivers/regulator/core.c:3366:
++     if (input_uV <= 0) {
++         rdev_err(rdev, "invalid input voltage found\n");
+
+ERROR: code indent should use tabs where possible
+#3387: FILE: drivers/regulator/core.c:3367:
++         rdev_err(rdev, "invalid input voltage found\n");$
+
+WARNING: please, no spaces at the start of a line
+#3387: FILE: drivers/regulator/core.c:3367:
++         rdev_err(rdev, "invalid input voltage found\n");$
+
+ERROR: code indent should use tabs where possible
+#3388: FILE: drivers/regulator/core.c:3368:
++         goto out;$
+
+WARNING: please, no spaces at the start of a line
+#3388: FILE: drivers/regulator/core.c:3368:
++         goto out;$
+
+WARNING: please, no spaces at the start of a line
+#3389: FILE: drivers/regulator/core.c:3369:
++     }$
+
+ERROR: trailing whitespace
+#3390: FILE: drivers/regulator/core.c:3370:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3390: FILE: drivers/regulator/core.c:3370:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3392: FILE: drivers/regulator/core.c:3372:
++     list_for_each_entry(consumer, &rdev->consumer_list, list)$
+
+WARNING: suspect code indent for conditional statements (5, 9)
+#3392: FILE: drivers/regulator/core.c:3372:
++     list_for_each_entry(consumer, &rdev->consumer_list, list)
++         total_uA_load += consumer->uA_load;
+
+ERROR: code indent should use tabs where possible
+#3393: FILE: drivers/regulator/core.c:3373:
++         total_uA_load += consumer->uA_load;$
+
+WARNING: please, no spaces at the start of a line
+#3393: FILE: drivers/regulator/core.c:3373:
++         total_uA_load += consumer->uA_load;$
+
+ERROR: trailing whitespace
+#3394: FILE: drivers/regulator/core.c:3374:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3394: FILE: drivers/regulator/core.c:3374:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3395: FILE: drivers/regulator/core.c:3375:
++     mode = rdev->desc->ops->get_optimum_mode(rdev,$
+
+ERROR: code indent should use tabs where possible
+#3396: FILE: drivers/regulator/core.c:3376:
++                          input_uV, output_uV,$
+
+WARNING: please, no spaces at the start of a line
+#3396: FILE: drivers/regulator/core.c:3376:
++                          input_uV, output_uV,$
+
+ERROR: code indent should use tabs where possible
+#3397: FILE: drivers/regulator/core.c:3377:
++                          total_uA_load);$
+
+WARNING: please, no spaces at the start of a line
+#3397: FILE: drivers/regulator/core.c:3377:
++                          total_uA_load);$
+
+WARNING: please, no spaces at the start of a line
+#3398: FILE: drivers/regulator/core.c:3378:
++     ret = regulator_mode_constrain(rdev, &mode);$
+
+WARNING: please, no spaces at the start of a line
+#3399: FILE: drivers/regulator/core.c:3379:
++     if (ret < 0) {$
+
+WARNING: suspect code indent for conditional statements (5, 9)
+#3399: FILE: drivers/regulator/core.c:3379:
++     if (ret < 0) {
++         rdev_err(rdev, "failed to get optimum mode @ %d uA %d -> %d uV\n",
+
+ERROR: code indent should use tabs where possible
+#3400: FILE: drivers/regulator/core.c:3380:
++         rdev_err(rdev, "failed to get optimum mode @ %d uA %d -> %d uV\n",$
+
+WARNING: please, no spaces at the start of a line
+#3400: FILE: drivers/regulator/core.c:3380:
++         rdev_err(rdev, "failed to get optimum mode @ %d uA %d -> %d uV\n",$
+
+ERROR: code indent should use tabs where possible
+#3401: FILE: drivers/regulator/core.c:3381:
++              total_uA_load, input_uV, output_uV);$
+
+WARNING: please, no spaces at the start of a line
+#3401: FILE: drivers/regulator/core.c:3381:
++              total_uA_load, input_uV, output_uV);$
+
+ERROR: code indent should use tabs where possible
+#3402: FILE: drivers/regulator/core.c:3382:
++         goto out;$
+
+WARNING: please, no spaces at the start of a line
+#3402: FILE: drivers/regulator/core.c:3382:
++         goto out;$
+
+WARNING: please, no spaces at the start of a line
+#3403: FILE: drivers/regulator/core.c:3383:
++     }$
+
+ERROR: trailing whitespace
+#3404: FILE: drivers/regulator/core.c:3384:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3404: FILE: drivers/regulator/core.c:3384:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3405: FILE: drivers/regulator/core.c:3385:
++     ret = rdev->desc->ops->set_mode(rdev, mode);$
+
+WARNING: please, no spaces at the start of a line
+#3406: FILE: drivers/regulator/core.c:3386:
++     if (ret < 0) {$
+
+WARNING: suspect code indent for conditional statements (5, 9)
+#3406: FILE: drivers/regulator/core.c:3386:
++     if (ret < 0) {
++         rdev_err(rdev, "failed to set optimum mode %x\n", mode);
+
+ERROR: code indent should use tabs where possible
+#3407: FILE: drivers/regulator/core.c:3387:
++         rdev_err(rdev, "failed to set optimum mode %x\n", mode);$
+
+WARNING: please, no spaces at the start of a line
+#3407: FILE: drivers/regulator/core.c:3387:
++         rdev_err(rdev, "failed to set optimum mode %x\n", mode);$
+
+ERROR: code indent should use tabs where possible
+#3408: FILE: drivers/regulator/core.c:3388:
++         goto out;$
+
+WARNING: please, no spaces at the start of a line
+#3408: FILE: drivers/regulator/core.c:3388:
++         goto out;$
+
+WARNING: please, no spaces at the start of a line
+#3409: FILE: drivers/regulator/core.c:3389:
++     }$
+
+WARNING: please, no spaces at the start of a line
+#3410: FILE: drivers/regulator/core.c:3390:
++     ret = mode;$
+
+WARNING: please, no spaces at the start of a line
+#3412: FILE: drivers/regulator/core.c:3392:
++     mutex_unlock(&rdev->mutex);$
+
+WARNING: please, no spaces at the start of a line
+#3413: FILE: drivers/regulator/core.c:3393:
++     return ret;$
+
+WARNING: please, no spaces at the start of a line
+#3414: FILE: drivers/regulator/core.c:3394:
++ }$
+
+WARNING: please, no spaces at the start of a line
+#3415: FILE: drivers/regulator/core.c:3395:
++ EXPORT_SYMBOL_GPL(regulator_set_optimum_mode);$
+
+ERROR: do not set execute permissions for source files
+#3483: FILE: include/linux/i2c.h
+
+ERROR: code indent should use tabs where possible
+#3492: FILE: include/linux/i2c.h:179:
++         int (*resume)(struct i2c_client *);$
+
+WARNING: please, no spaces at the start of a line
+#3492: FILE: include/linux/i2c.h:179:
++         int (*resume)(struct i2c_client *);$
+
+ERROR: do not set execute permissions for source files
+#3498: FILE: include/linux/regulator/consumer.h
+
+ERROR: code indent should use tabs where possible
+#3516: FILE: include/linux/regulator/consumer.h:489:
++                    int load_uA)$
+
+WARNING: please, no spaces at the start of a line
+#3516: FILE: include/linux/regulator/consumer.h:489:
++                    int load_uA)$
+
+ERROR: trailing whitespace
+#3520: FILE: include/linux/regulator/consumer.h:493:
++ $
+
+WARNING: please, no spaces at the start of a line
+#3520: FILE: include/linux/regulator/consumer.h:493:
++ $
+
+WARNING: please, no space before tabs
+#3562: FILE: include/linux/switch.h:33:
++^Iunsigned ^Igpio;$
+
+ERROR: do not set execute permissions for source files
+#3584: FILE: include/linux/wakelock.h
+
+total: 77 errors, 292 warnings, 3569 lines checked
+
+NOTE: Whitespace errors detected.
+      You may wish to use scripts/cleanpatch or scripts/cleanfile
+
+../checkPatch/0002-Added-touch-support-for-DSI-using-himax8526.patch has style problems, please review.
+
+NOTE: If any of the errors are false positives, please report
+      them to the maintainer, see CHECKPATCH in MAINTAINERS.

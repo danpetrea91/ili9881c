@@ -3295,6 +3295,105 @@ unsigned int regulator_get_mode(struct regulator *regulator)
 EXPORT_SYMBOL_GPL(regulator_get_mode);
 
 /**
+  * regulator_set_optimum_mode - set regulator optimum operating mode
+  * @regulator: regulator source
+  * @uA_load: load current
+  *
+  * Notifies the regulator core of a new device load. This is then used by
+  * DRMS (if enabled by constraints) to set the most efficient regulator
+  * operating mode for the new regulator loading.
+  *
+  * Consumer devices notify their supply regulator of the maximum power
+  * they will require (can be taken from device datasheet in the power
+  * consumption tables) when they change operational status and hence power
+  * state. Examples of operational state changes that can affect power
+  * consumption are :-
+  *
+  *    o Device is opened / closed.
+  *    o Device I/O is about to begin or has just finished.
+  *    o Device is idling in between work.
+  *
+  * This information is also exported via sysfs to userspace.
+  *
+  * DRMS will sum the total requested load on the regulator and change
+  * to the most efficient operating mode if platform constraints allow.
+  *
+  * Returns the new regulator mode or error.
+  */
+int regulator_set_optimum_mode(struct regulator *regulator, int uA_load)
+{
+	struct regulator_dev *rdev = regulator->rdev;
+	struct regulator *consumer;
+    int ret, output_uV, input_uV = 0, total_uA_load = 0;
+    unsigned int mode;
+
+    if (rdev->supply)
+		input_uV = regulator_get_voltage(rdev->supply);
+	mutex_lock(&rdev->mutex);
+
+     /*
+      * first check to see if we can set modes at all, otherwise just
+      * tell the consumer everything is OK.
+      */
+	regulator->uA_load = uA_load;
+    ret = regulator_check_drms(rdev);
+    if (ret < 0) {
+		ret = 0;
+		goto out;
+	}
+
+    if (!rdev->desc->ops->get_optimum_mode)
+		goto out;
+
+     /*
+      * we can actually do this so any errors are indicators of
+      * potential real failure.
+      */
+	ret = -EINVAL;
+
+    if (!rdev->desc->ops->set_mode)
+		goto out;
+
+     /* get output voltage */
+    output_uV = _regulator_get_voltage(rdev);
+    if (output_uV <= 0) {
+		rdev_err(rdev, "invalid output voltage found\n");
+		goto out;
+	}
+/* No supply? Use constraint voltage */
+		if (input_uV <= 0)
+			input_uV = rdev->constraints->input_uV;
+		if (input_uV <= 0) {
+			rdev_err(rdev, "invalid input voltage found\n");
+			goto out;
+		}
+
+/* calc total requested load for this regulator */
+		list_for_each_entry(consumer, &rdev->consumer_list, list)
+		total_uA_load += consumer->uA_load;
+
+		mode = rdev->desc->ops->get_optimum_mode(rdev,
+							input_uV, output_uV,
+							total_uA_load);
+		ret = regulator_mode_constrain(rdev, &mode);
+		if (ret < 0) {
+			rdev_err(rdev, "failed to get optimum mode @ %d uA %d -> %d uV\n",
+			total_uA_load, input_uV, output_uV);
+			goto out;
+		}
+ 
+		ret = rdev->desc->ops->set_mode(rdev, mode);
+		if (ret < 0) {
+			rdev_err(rdev, "failed to set optimum mode %x\n", mode);
+			goto out;
+		}
+	ret = mode;
+ out:
+	mutex_unlock(&rdev->mutex);
+	return ret;
+}
+EXPORT_SYMBOL_GPL(regulator_set_optimum_mode);
+/**
  * regulator_set_load - set regulator load
  * @regulator: regulator source
  * @uA_load: load current

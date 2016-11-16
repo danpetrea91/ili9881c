@@ -186,21 +186,48 @@
 		/* On Low speed expansion */
 			label = "LS-I2C0";
 			status = "okay";
+
+			himax@4a {
+				compatible = "himax,hx8527-d48";
+				reg = <0x4a>;
+				interrupt-parent = <&msmgpio>;
+				interrupts = <62 0x2>;
+				vdd-supply = <&vph_pwr_vreg>;
+				vcc_i2c-supply = <&vph_pwr_vreg>;
+				himax,name = "hx8527-d48";
+				himax,reset-gpio = <&tca9539 1 0>;
+				himax,irq-gpio = <&msmgpio 62 0x00>;
+				himax,i2c-pull-up;
+				himax,reg-en;
+				himax,num-max-touches = <5>;
+			};
 		};
 
 		i2c@78b8000 {
 
 			tca9539: tca9539@20 {
-				compatible = "ti,tca9539";
-				reg = <0x20>;
-				gpio-controller;
-				#gpio-cells = <2>;
-				interrupt-controller;
-				#interrupt-cells = <2>;
-				/* On High speed expansion */
-				label = "HS-I2C2";
-				status = "okay";
+					compatible = "ti,tca9539";
+					reg = <0x20>;
+					gpio-controller;
+					#gpio-cells = <2>;
+					interrupt-controller;
+					#interrupt-cells = <2>;
+					/* On High speed expansion */
+					label = "HS-I2C2";
+					status = "okay";
 			};
+		};
+
+		/*
+		* vph_pwr_vreg represents the unregulated battery voltage supply
+		* VPH_PWR that is present whenever the device is powered on.
+		*/
+		vph_pwr_vreg: vph_pwr_vreg {
+			compatible = "regulator-fixed";
+			regulator-name = "vph_pwr";
+			status = "ok";
+			regulator-always-on;
+			enable-active-high;
 		};
 
 		i2c@78ba000 {
