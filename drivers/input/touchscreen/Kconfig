@@ -60,14 +60,14 @@ config TOUCHSCREEN_AD7877
 	  module will be called ad7877.
 
 config TOUCHSCREEN_HX8526A
-       tristate " HIMAX8526A  touchscreens"
-       tristate " HIMAX8526A  touchscreens"
-       help
-         Say Y here if you have a touchscreen interface using the
-         himax controller, and your board-specific initialization
-         code.
+	tristate " HIMAX8526A  touchscreens"
+	tristate " HIMAX8526A  touchscreens"
+	help
+		Say Y here if you have a touchscreen interface using the
+		himax controller, and your board-specific initialization
+		code.
 
-         If unsure, say N (but it's safe to say "Y").
+		If unsure, say N (but it's safe to say "Y").
 
 config HX8526A_FW_UPDATE
        bool " HIMAX8526A  touchscreens Firmware "

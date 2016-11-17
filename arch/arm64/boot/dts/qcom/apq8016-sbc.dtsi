@@ -305,20 +305,27 @@
 				linux,default-trigger = "none";
 				default-state = "on";
 			};
-			/* SCAM_PWDN */
-			led@8 {
+			/* SCAM_PWDN
+			* Disble SCAM_PWDN, MCAM_PWDN gpio registration
+			* will be used in camera driver
+			*/
+
+			/*led@8 {
 				label = "scam_pwdn";
 				gpios = <&tca9539 3 GPIO_ACTIVE_HIGH>;
 				linux,default-trigger = "none";
 				default-state = "on";
 			};
-			/* MCAM_PWDN */
+
+			MCAM_PWDN
 			led@9 {
 				label = "mcam_pwdn";
 				gpios = <&tca9539 4 GPIO_ACTIVE_HIGH>;
 				linux,default-trigger = "none";
 				default-state = "on";
 			};
+			*/
+
 			/* CAM_GPIO_1 */
 			led@10 {
 				label = "cam_gpio_1";
@@ -615,4 +622,12 @@
 
 &vidc {
 	status = "okay";
+};
+
+&ov5640_pri_camera{
+	pwdn-gpios = <&tca9539 4 0>;
+};
+
+&ov5640_sec_camera{
+	pwdn-gpios = <&tca9539 3 0>;
 };

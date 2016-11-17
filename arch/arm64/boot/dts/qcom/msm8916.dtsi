@@ -382,7 +382,16 @@
 						clock-lanes = <1>;
 						data-lanes = <0 2>;
 						qcom,settle-cnt = <0xe>;
-						remote-endpoint = <&ov5645_ep>;
+						remote-endpoint = <&ov5640_pri_ep>;
+					};
+				};
+				port@1 {
+					reg = <1>;
+					csiphy1_ep: endpoint {
+						clock-lanes = <1>;
+						data-lanes = <0 2>;
+						qcom,settle-cnt = <0xe>;
+						remote-endpoint = <&ov5640_sec_ep>;
 					};
 				};
 			};
@@ -411,6 +420,7 @@
 			pinctrl-names = "default", "sleep";
 			pinctrl-0 = <&cci0_default>;
 			pinctrl-1 = <&cci0_sleep>;
+
 			i2c_freq_100Khz: qcom,i2c_standard_mode {
 				status = "disabled";
 			};
@@ -419,6 +429,30 @@
 			};
 			i2c_freq_custom: qcom,i2c_custom_mode {
 				status = "disabled";
+			};
+
+			ov5640_pri_camera: pri_camera@78 {
+				compatible = "ovti,ov5640_pri";
+				reg = <0x78>;
+
+				reset-gpios = <&msmgpio 35 0>;
+				pinctrl-names = "default";
+				pinctrl-0 = <&camera_pri_default>;
+
+				clocks = <&gcc GCC_CAMSS_MCLK0_CLK>;
+				clock-names = "xclk";
+
+				vdddo-supply = <&camera_vdddo_1v8>;
+				vdda-supply = <&camera_vdda_2v8>;
+				vddd-supply = <&camera_vddd_1v5>;
+
+				port {
+					ov5640_pri_ep: endpoint {
+						clock-lanes = <1>;
+						data-lanes = <0 2>;
+						remote-endpoint = <&csiphy0_ep>;
+					};
+				};
 			};
 		};
 
@@ -669,17 +703,17 @@
 			pinctrl-1 = <&i2c6_sleep>;
 			#address-cells = <1>;
 			#size-cells = <0>;
-			status = "disabled";
-			camera@78 {
-				compatible = "ovti,ov5645";
-				reg = <0x78>;
+			status = "okay";
 
-				enable-gpios = <&msmgpio 34 0>;
-				reset-gpios = <&msmgpio 35 1>;
+			ov5640_sec_camera: sec_camera@3c {
+				compatible = "ovti,ov5640_sec";
+				reg = <0x3c>;
+
+				reset-gpios = <&msmgpio 28 0>;
 				pinctrl-names = "default";
-				pinctrl-0 = <&camera_rear_default>;
+				pinctrl-0 = <&camera_sec_default>;
 
-				clocks = <&gcc GCC_CAMSS_MCLK0_CLK>;
+				clocks = <&gcc GCC_CAMSS_MCLK1_CLK>;
 				clock-names = "xclk";
 
 				vdddo-supply = <&camera_vdddo_1v8>;
@@ -687,10 +721,10 @@
 				vddd-supply = <&camera_vddd_1v5>;
 
 				port {
-					ov5645_ep: endpoint {
+					ov5640_sec_ep: endpoint {
 						clock-lanes = <1>;
 						data-lanes = <0 2>;
-						remote-endpoint = <&csiphy0_ep>;
+						remote-endpoint = <&csiphy1_ep>;
 					};
 				};
 			};
@@ -1300,7 +1334,7 @@
 	qcom,hw-scl-stretch-en = <0>;
 	qcom,hw-trdhld = <6>;
 	qcom,hw-tsp = <1>;
-	status = "ok";
+	status = "disabled";
 };
 
 &i2c_freq_400Khz {
@@ -1328,7 +1362,7 @@
 	qcom,hw-scl-stretch-en = <1>;
 	qcom,hw-trdhld = <6>;
 	qcom,hw-tsp = <3>;
-	status = "ok";
+	status = "disabled";
 };
 
 

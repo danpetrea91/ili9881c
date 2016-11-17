@@ -502,6 +502,38 @@ config VIDEO_OV5645
 	  To compile this driver as a module, choose M here: the
 	  module will be called ov5645.
 
+config VIDEO_OV5640_PRI
+	tristate "OmniVision ov5640 sensor support as primary camera"
+	depends on MSM_CCI
+	depends on OF
+	depends on I2C && VIDEO_V4L2 && VIDEO_V4L2_SUBDEV_API
+	depends on MEDIA_CAMERA_SUPPORT
+	---help---
+	  This is a Video4Linux2 sensor-level driver for the OmniVision
+	  OV5640 camera.
+
+	  You should enable this if you want to add support for ov5640
+	  mounted on cci and using csi core 0.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called ov5640.
+
+config VIDEO_OV5640_SEC
+	tristate "OmniVision ov5640 sensor support as secondary camera"
+	depends on MSM_CCI
+	depends on OF
+	depends on I2C && VIDEO_V4L2 && VIDEO_V4L2_SUBDEV_API
+	depends on MEDIA_CAMERA_SUPPORT
+	---help---
+	  This is a Video4Linux2 sensor-level driver for the OmniVision
+	  OV5640 camera.
+
+	  You should enable this if you want to add support for ov5640
+	  mounted on i2c6 and using csi core 1.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called ov5640.
+
 config VIDEO_OV7640
 	tristate "OmniVision OV7640 sensor support"
 	depends on I2C && VIDEO_V4L2
