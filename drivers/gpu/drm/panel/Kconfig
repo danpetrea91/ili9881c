@@ -51,4 +51,11 @@ config DRM_PANEL_SHARP_LQ101R1SX01
 	  To compile this driver as a module, choose M here: the module
 	  will be called panel-sharp-lq101r1sx01.
 
+config DRM_PANEL_ILITEK_ILI9881C
+	tristate "Ilitek ili9881c DSI panel"
+	#depends on OF
+	select DRM_MIPI_DSI
+	select VIDEOMODE_HELPERS
+	default y
+
 endmenu

@@ -502,7 +502,7 @@
 
 &blsp_i2c2 {
 	status = "ok";
-	adv_bridge: bridge@39 {
+	/*adv_bridge: bridge@39 {
 		status = "ok";
 		compatible = "adi,adv7533";
 		reg = <0x39>;
@@ -522,6 +522,8 @@
 			};
 		};
 	};
+*/
+
 };
 
 
@@ -532,7 +534,7 @@
 };
 
 
-
+/*
 &mdss_dsi0 {
 	status = "ok";
 	port {
@@ -542,6 +544,29 @@
 	};
 };
 
+*/
+
+&mdss_dsi0
+{
+	status = "ok";
+	panel@0 {
+		compatible = "ilitek,ili9881c";
+		reg = <0>;
+		power-supply = <&pm8916_l6>;
+		backlight = <&backlight>;
+		reset-gpio = <&tca9539 0 0>;
+		port {
+			ilitek_in: endpoint {
+				remote-endpoint = <&dsi0_out>;
+			};
+		};
+	};
+	port {
+		dsi0_out: endpoint {
+			remote-endpoint = <&ilitek_in>;
+		};
+	};
+}
 &lpass {
 	status = "okay";
 };
@@ -578,16 +603,18 @@
 		"DMIC1", "MIC BIAS Internal1";
 
 	/* External Primary or External Secondary -ADV7533 HDMI */
+	/*	
 	external-dai-link@0 {
 		link-name = "ADV7533";
 
-		cpu { /* QUAT */
+		cpu {
 			sound-dai = <&lpass MI2S_QUATERNARY>;
 		};
 		codec {
 			sound-dai = <&adv_bridge 0>;
 		};
 	};
+	*/
 
 	internal-codec-playback-dai-link@0 {		/* I2S - Internal codec */
 		link-name = "WCD";
